@@ -32,8 +32,15 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
-function contact_btn( $items, $args ) {
-	$items .= '<a href="/contact" class="contact-btn">Nous contacter</a>';
+function contact_btn( $items) {
+	// Code du bouton
+	// <a href="'. get_site_url() .'/contact/" class="menu-link">Nous contacter</a>
+	// <a href="'. get_site_url() .'/contact/" class="contact-btn">Nous contacter</a>
+	$items .= '
+	<li class="menu-item menu-item-type-post_type menu-item-object-page">
+	<a href="'. get_site_url() .'/contact/" class="contact-btn"><span>Nous contacter</span>	</a>
+	</li>';
+	// On retourne le code
 	return $items;
 }
 

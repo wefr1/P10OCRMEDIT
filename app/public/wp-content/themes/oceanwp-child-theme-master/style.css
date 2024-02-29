@@ -12,7 +12,7 @@ Version: 1.0
 
 
 
-a.contact-btn{
+#site-navigation-wrap .dropdown-menu li a.contact-btn{
     display:unset;
     background-color:white;
     color: #2377A8;
@@ -20,7 +20,7 @@ a.contact-btn{
     border-radius:6px;
 }
 
-a.contact-btn:hover {
+#site-navigation-wrap .dropdown-menu li a.contact-btn:hover {
     color: #28BABF !important;
 }
 
